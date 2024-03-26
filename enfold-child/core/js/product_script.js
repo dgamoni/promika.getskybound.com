@@ -1,6 +1,11 @@
 
 jQuery(document).ready(function($) {
 
+	$('.species_selector_element').click(function(event) {
+		$('.species_selector_element').removeClass('select');
+		$(this).addClass('select');
+	});
+	
 	// $('.gallery_variant').hide();
 	// $('.gallery_variant.selected').show();
 

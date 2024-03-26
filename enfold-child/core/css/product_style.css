@@ -1,21 +1,27 @@
 
 
-
+.sprite {
+    background-image: url('../img/sprite_25.png');
+    background-repeat: no-repeat; 
+}
 /*single product*/
 .promika_product_benefits_long {
 	margin-top: 15px;
 }
 .promika_product_benefits_long_row {
-	display: flex;
+    display: flex;
     align-items: center;
     margin-bottom: 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 } 
 .promika_product_benefits_long_logo {
 	max-width: 50px;
-    margin-right: 15px;
+    /*margin-right: 15px;*/
 }
 .promika_product_benefits_long_text {
-
+flex-basis: 75%;
+    line-height: 17px;
 }
 .promika_embed-container {
 	margin-top: 20px;
@@ -81,10 +87,13 @@
 h2.promika_compare_to_statement_title {
 	margin-bottom: 5px;
 }
-.entry-content-wrapper .post-title.promika_compare_to_statement_title {
-	    font-size: 23px;
+#top .fullsize .template-blog .entry-content-wrapper .post-title.promika_compare_to_statement_title {
+	font-size: 23px;
     line-height: 1.1;
     font-weight: 400;
+    text-align: left;
+    margin-bottom: 5px;
+    padding: 0;
 }
 .promika_compare_to_statement_description {
 	color: #022c60;
@@ -97,12 +106,19 @@ h2.promika_compare_to_statement_title {
 }
 .main_color h1.promika_title {
 	color: white;
-    width: 50%;
+    /*width: 50%;*/
     text-align: center;
     font-weight: normal;
+    width: 66%;
+    padding: 0 30px;
 }
 .promika_logo {
+	/*width: 275px;*/
+	width: 33%;
+}
+.promika_logo_wrap {
 	width: 275px;
+    margin: auto;
 }
 .product_header_wrap {
 	display: flex;
@@ -239,6 +255,213 @@ div .main_color .tabcontainer.promika_maintabs .active_tab {
 .home_product_content {
 	padding: 10px;
 }
-.promika_logo {
+.promika_logo_home {
 	width: 230px;
+    height: 100px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.promika_logo_home img {
+	    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+.promika_logo_home_ {
+
+}
+.main_color .promika_product_benefits_short {
+	margin-top: 15px;
+}
+.main_color .promika_product_benefits_short strong {
+	color: black;
+}
+.main_color a.view_product {
+    color: white;
+    background-color: #0c183b;
+    padding: 10px 20px;
+    font-weight: 600;
+    margin-top: 5px;
+    display: inline-block;
+}
+.main_color a.view_product:hover {
+		color: white;
+		text-decoration: underline;
+}
+.promika_homepage_image {
+	    height: 235px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.home_product_content_flex {
+
+}
+.main_color .promika_product_benefits_short h3 {
+	font-weight: normal;
+	    font-size: 17px;
+}
+.single-product .avia-post-nav {
+	display: none;
+}
+.wpcf7-validation-errors {
+	display: none !important;
+}
+#top .main_color textarea.wpcf7-not-valid,
+#top .main_color input[type=text].wpcf7-not-valid,
+#top .main_color input[type=email].wpcf7-not-valid {
+	outline: 1px solid red;
+    outline-offset: -1px;
+}
+.wpcf7-not-valid-tip {
+	display: none !important;
+}
+
+.av-main-nav div.ajaxsearchpro[id*="ajaxsearchpro1_"] {
+	   /* margin-top: 30px;*/
+}
+
+.header-scrolled .av-main-nav div.ajaxsearchpro[id*="ajaxsearchpro1_"] {
+	   /* margin-top: 5px;*/
+}
+.prosettings {
+	display: none;
+}
+
+.main_color h3.product_selector_header {
+	background-color: #012c60;
+    color: white;
+    padding: 10px 20px;
+    font-weight: normal;
+        margin: 0;
+}
+.product_sidebar_wrap {
+	text-align: center;
+    padding: 20px;
+}
+.species_selector_element {
+	width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.species_selector_element:hover {
+	cursor: pointer;
+}
+.species_selector_element.dog {
+    background-image: url(../img/dog_icon.png);
+/*    background-position: -382px -365px;
+    width: 93px;
+    height: 93px;*/
+}
+.species_selector_element.cat {
+    background-image: url(../img/cat_icon.png);
+}
+.species_selector_element.dog.select {
+    background-image: url(../img/dog_icon_select.png);
+}
+.species_selector_element.cat.select {
+    background-image: url(../img/cat_icon_select.png);
+}
+.species_selector_wrap {
+	display: flex;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+    padding-top: 10px;
+        background-color: #f2f4f7;
+}
+.species_application_type_selector_wrap {
+	background-color: #f2f4f7;
+}
+.main_color div.type_selector_element {
+    line-height: 33px;
+    border-bottom: 1px solid #ccc;
+    color: black;
+    font-size: 18px;
+}
+.main_color div.type_selector_element.select {
+	background-color: white;
+}
+.av-main-nav>li>a.search_wrap {
+        display: flex;
+    align-items: center;
+}
+#ajaxsearchpro1_1 .probox .promagnifier div.innericon,
+#ajaxsearchpro1_2 .probox .promagnifier div.innericon,
+div.ajaxsearchpro[id*=ajaxsearchpro1_] .probox .promagnifier div.innericon {
+    line-height: 28px;
+}
+
+
+.cat.promika_aplication_type.collar {
+    display: none;
+}
+.promika_products_image {
+     display: flex;
+}
+.promika_products_image div {
+     min-width: 0;
+}
+.promika_products_image img {
+        max-width: 100%; /*or width: 100%; if so the above line won't be required */
+       height: 300px;
+}
+
+.archive_product_content {
+    padding: 25px;
+    text-align: center;
+}
+.main_color div.promika_breadcrumbs {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.promika_breadcrumbs span {
+
+}
+
+@media only screen and (max-width: 900px) {
+    .product_header {
+            height: 300px;
+    }
+    .product_header_wrap {
+        flex-direction: column;
+        padding-top: 20px;
+        height: 300px; 
+    }
+    .promika_logo {
+        width: 90%;
+    }
+    .main_color h1.promika_title {
+        width: 90%;
+    }
+    .product_sidebar_wrap {
+         padding: 0px; 
+    }
+}
+@media only screen and (max-width: 767px) {
+    .promika_homepage_image {
+        height: 100%;
+    }
+    .promika_logo_home {
+        width: 100%;
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .promika_aplication_type_home {
+        flex-direction: column;
+        align-items: center;
+    }
+    .promika_aplication_type_home .promika_aplication_type {
+        margin-bottom: 50px;
+    }
 }

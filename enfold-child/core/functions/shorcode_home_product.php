@@ -71,7 +71,7 @@ function get_home_promika_product( $atts ){
 
 					<div data-species="<?php echo $promika_species; ?>" data-type="collar" class="home_product_content flex_column av_one_third  flex_column_div av-zero-column-padding <?php echo $first; ?>  avia-builder-el-7  el_after_av_tab_container  el_before_av_one_third  " style="border-radius:0px; ">
 						<section class="av_textblock_section " itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost">
-							<div class="avia_textblock  " itemprop="text">
+							<div class="avia_textblock  home_product_content_flex" itemprop="text">
 								
 								<div class="promika_homepage_image">
 									<?php
@@ -80,7 +80,7 @@ function get_home_promika_product( $atts ){
 										}
 									  ?>
 								</div>
-								<div class="promika_logo">
+								<div class="promika_logo_home">
 									<?php
 										if( $promika_logo ) {
 											echo wp_get_attachment_image( $promika_logo, $size );
