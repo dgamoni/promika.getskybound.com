@@ -8,13 +8,13 @@ $promika_aplication_type = get_field('promika_aplication_type', $post->ID);
 $promika_species = get_field('promika_species', $post->ID);
 ?>    
 
-    <div class="promika_aplication_type_wrap <?php echo $promika_species; ?>">
+    <div class="promika_aplication_type_wrap <?php //echo $promika_species; ?>">
         <?php
         // check
         if( $promika_aplication_type ): ?>
             
                 <?php foreach( $promika_aplication_type as $promika_aplication_type_ ): ?>
-                    <div class="promika_aplication_type <?php echo $promika_aplication_type_['value']; ?>" >
+                    <div class="promika_aplication_type <?php echo $promika_species; ?> <?php echo $promika_aplication_type_['value']; ?>" >
                         <?php //echo $promika_aplication_type['choices'][ $color ]; ?>
                     </div>
                 <?php endforeach; ?>

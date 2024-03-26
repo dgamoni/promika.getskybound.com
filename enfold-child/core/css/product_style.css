@@ -20,7 +20,8 @@
     /*margin-right: 15px;*/
 }
 .promika_product_benefits_long_text {
-flex-basis: 75%;
+/*flex-basis: 75%;*/
+flex-basis: 81%;
     line-height: 17px;
 }
 .promika_embed-container {
@@ -131,13 +132,17 @@ h2.promika_compare_to_statement_title {
     margin-bottom: 10px;
 }
 .promika_aplication_type {
-    width: 60px;
+/*    width: 60px;
     height: 60px;
-    background-size: contain;
+    background-size: contain;*/
     background-repeat: no-repeat;
     margin-right: 10px;
+
+    width: 70px;
+    height: 70px;
+    background-size: cover;
 }
-.dog .promika_aplication_type.spoton {
+/*.dog .promika_aplication_type.spoton {
 	background-image: url(../img/dog_spoton.png);
 }
 .cat .promika_aplication_type.spoton {
@@ -151,7 +156,7 @@ h2.promika_compare_to_statement_title {
 }
 .cat .promika_aplication_type.collar {
 	background-image: url(../img/cat_collar.png);
-}
+}*/
 
 .js_active .promika_maintabs .tab {
 	    font-size: 16px;
@@ -210,17 +215,36 @@ div .main_color .tabcontainer.promika_maintabs .active_tab {
 }
 
 .dog.promika_aplication_type.spoton {
-	background-image: url(../img/dog_spoton.png);
+	/*background-image: url(../img/dog_spoton.png);*/
+    background-image: url(../img/svg/dog-spot-on-icon-blue.svg);
 }
 .cat.promika_aplication_type.spoton {
-	background-image: url(../img/cat_spoton.png);
+	/*background-image: url(../img/cat_spoton.png);*/
+    background-image: url(../img/svg/cat-spot-on-icon-blue.svg);
 }
 .promika_aplication_type.spray {
-	background-image: url(../img/spray_.png);
+	/*background-image: url(../img/spray_.png);*/
+    background-image: url(../img/svg/sprays-icon-blue.svg);
 }
 .dog.promika_aplication_type.collar {
-	background-image: url(../img/dog_collar.png);
+	/*background-image: url(../img/dog_collar.png);*/
+    background-image: url(../img/svg/dog-color-icon-blue.svg);
 }
+
+/*active*/
+.dog.promika_aplication_type.spoton.select {
+    background-image: url(../img/svg/dog-spot-on-icon-orange-roll.svg);
+}
+.cat.promika_aplication_type.spoton.select {
+    background-image: url(../img/svg/cat-spot-on-icon-orange-roll.svg);
+}
+.promika_aplication_type.spray.select {
+    background-image: url(../img/svg/sprays-icon-orange-roll.svg);
+}
+.dog.promika_aplication_type.collar.select {
+    background-image: url(../img/svg/dog-color-icon-orange-roll.svg);
+}
+
 .cat.promika_aplication_type.collar {
 	background-image: url(../img/cat_collar.png);
 }
@@ -230,19 +254,23 @@ div .main_color .tabcontainer.promika_maintabs .active_tab {
 	    margin-bottom: 50px;
 }
 .promika_aplication_type_home .promika_aplication_type {
-	width: 100px;
-    height: 100px;
+	/*width: 100px;*/
+    /*height: 100px;*/
     margin-right: 22px;
     position: relative;
+    width: 110px;
+    height: 110px;
+    background-size: cover;
 }
 .promika_aplication_type_label {
     position: absolute;
     bottom: -38px;
     width: 100px;
     left: 0;
-    color: #012c5f;
+    /*color: #012c5f;*/
     font-size: 16px;
     font-weight: bold;
+    color: #18234e;
 }
 .promika_aplication_type_home .promika_aplication_type:hover {
 	cursor: pointer;
@@ -289,6 +317,7 @@ div .main_color .tabcontainer.promika_maintabs .active_tab {
     font-weight: 600;
     margin-top: 5px;
     display: inline-block;
+    height: 41px;
 }
 .main_color a.view_product:hover {
 		color: white;
@@ -356,15 +385,16 @@ div .main_color .tabcontainer.promika_maintabs .active_tab {
 }
 .species_selector_element.dog {
     background-image: url(../img/dog_icon.png);
-/*    background-position: -382px -365px;
-    width: 93px;
-    height: 93px;*/
+/*    background-image: url(../img/svg/dog-color-icon-blue.svg);
+    background-size: 110%;
+    background-position: 65% 37%;*/
 }
 .species_selector_element.cat {
     background-image: url(../img/cat_icon.png);
 }
 .species_selector_element.dog.select {
     background-image: url(../img/dog_icon_select.png);
+    /*background-image: url(../img/svg/dog-color-icon-orange-roll.svg);*/
 }
 .species_selector_element.cat.select {
     background-image: url(../img/cat_icon_select.png);
@@ -404,6 +434,7 @@ div.ajaxsearchpro[id*=ajaxsearchpro1_] .probox .promagnifier div.innericon {
 }
 .promika_products_image {
      display: flex;
+         justify-content: center;
 }
 .promika_products_image div {
      min-width: 0;
@@ -426,7 +457,26 @@ div.ajaxsearchpro[id*=ajaxsearchpro1_] .probox .promagnifier div.innericon {
 .promika_breadcrumbs span {
 
 }
-
+.type_selector_element:hover {
+    cursor: pointer;
+}
+.nofound {
+        height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.view_product_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 1100px) {
+    .promika_products_image img {
+        height: auto;
+    }
+}
 @media only screen and (max-width: 900px) {
     .product_header {
             height: 300px;

@@ -1,6 +1,8 @@
 <?php
 
 global $p_key;
+global $post;
+
 
 if($p_key % 2 == 0) {$first = 'first'; } else {$first = '';}
 
@@ -11,7 +13,7 @@ $promika_product_benefits_short = get_field('promika_product_benefits_short', $p
 
 $promika_aplication_type = get_field('promika_aplication_type', $post->ID);
 $promika_species = get_field('promika_species', $post->ID);
-
+//var_dump($promika_aplication_type);
 ?>
 
 	<div data-species="<?php echo $promika_species; ?>" data-type="collar" class="archive_product_content flex_column av_one_half  flex_column_div av-zero-column-padding <?php echo $first; ?>  avia-builder-el-7  el_after_av_tab_container  el_before_av_one_half  " style="border-radius:0px; ">
@@ -36,7 +38,19 @@ $promika_species = get_field('promika_species', $post->ID);
 					  ?>
 				</div>
 
-				<a class="view_product" href="<?php echo get_permalink($post->ID); ?>">View Product!</a>
+				<div class="view_product_wrap">
+			        <?php if( $promika_aplication_type ): ?>
+			            
+			                <?php foreach( $promika_aplication_type as $promika_aplication_type_ ): ?>
+			                    <div class="promika_aplication_type <?php echo $promika_species; ?> <?php echo $promika_aplication_type_['value']; ?>" >
+			                    </div>
+			                <?php endforeach; ?>
+			            
+			        <?php endif; ?>
+
+					<a class="view_product" href="<?php echo get_permalink($post->ID); ?>">View Product!</a>
+
+				</div>
 
 
 			</div>

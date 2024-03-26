@@ -34,8 +34,8 @@ echo "<aside class='sidebar sidebar_".$sidebar." ".$sidebar_smartphone." ".avia_
                 <div class="product_species_selector">
                     <h3 class="product_selector_header">Select a Species</h3>
                     <div class="species_selector_wrap">
-                        <div class="species_selector_element _sprite dog select"></div>
-                        <div class="species_selector_element _sprite cat"></div>
+                        <div class="species_selector_element _sprite dog select" data-spice="dog"></div>
+                        <div class="species_selector_element _sprite cat" data-spice="cat"></div>
                     </div>
                 </div>
                 <div class="product_application_type_selector">
