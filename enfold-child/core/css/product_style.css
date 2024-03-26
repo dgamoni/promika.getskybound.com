@@ -1,0 +1,244 @@
+
+
+
+/*single product*/
+.promika_product_benefits_long {
+	margin-top: 15px;
+}
+.promika_product_benefits_long_row {
+	display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+} 
+.promika_product_benefits_long_logo {
+	max-width: 50px;
+    margin-right: 15px;
+}
+.promika_product_benefits_long_text {
+
+}
+.promika_embed-container {
+	margin-top: 20px;
+}
+.promika_product_variants_title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #dedede;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+.main_color div .promika_product_variants_title {
+	border-color: #dedede;
+}
+.promika_product_variants_row {
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.promika_product_variants_size {
+    font-size: 23px;
+    background-color: #dedede;
+    padding: 10px 20px;
+    flex-basis: 48%;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.promika_product_variants_size:hover {
+	cursor: pointer;
+}
+.promika_product_variants_size.selected {
+	background-color: #81be41;
+	color:white;
+}
+.gallery_variant {
+	display: none;
+}
+.gallery_variant.selected {
+	display: block;
+}
+.flex-direction-nav {
+	display: none;
+}
+.main_color div.flexslider,
+.main_color div.promika_product_variants_gallery_wrap,
+.main_color div.gallery_variant
+{
+	border:none;
+}
+.flex-control-paging li a {
+  width: 20px;
+  height: 20px;
+}
+.flex-control-paging li a {
+	background: #dedede;
+}
+.flex-control-paging li a.flex-active {
+    background:  #81be41;
+}
+h2.promika_compare_to_statement_title {
+	margin-bottom: 5px;
+}
+.entry-content-wrapper .post-title.promika_compare_to_statement_title {
+	    font-size: 23px;
+    line-height: 1.1;
+    font-weight: 400;
+}
+.promika_compare_to_statement_description {
+	color: #022c60;
+    font-size: 17px;
+    font-weight: 600;
+}
+.product_header {
+	height: 200px;
+	background-size: cover;
+}
+.main_color h1.promika_title {
+	color: white;
+    width: 50%;
+    text-align: center;
+    font-weight: normal;
+}
+.promika_logo {
+	width: 275px;
+}
+.product_header_wrap {
+	display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: space-between;
+}
+.promika_aplication_type_wrap {
+	display: flex;
+    margin-bottom: 10px;
+}
+.promika_aplication_type {
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.dog .promika_aplication_type.spoton {
+	background-image: url(../img/dog_spoton.png);
+}
+.cat .promika_aplication_type.spoton {
+	background-image: url(../img/cat_spoton.png);
+}
+.promika_aplication_type.spray {
+	background-image: url(../img/spray_.png);
+}
+.dog .promika_aplication_type.collar {
+	background-image: url(../img/dog_collar.png);
+}
+.cat .promika_aplication_type.collar {
+	background-image: url(../img/cat_collar.png);
+}
+
+.js_active .promika_maintabs .tab {
+	    font-size: 16px;
+}
+#top .main_color .tabcontainer .tab:hover {
+
+}
+.main_color .tabcontainer.promika_maintabs .tab {
+    color: #012c60;
+    background-color: #f0f0f0;
+    margin-right: 5px;
+}
+div .main_color .tabcontainer.promika_maintabs .active_tab_content {
+	background-color: transparent;
+	    border-top: 1px solid #f0f0f0;
+}
+div .main_color .tabcontainer.promika_maintabs .active_tab {
+    background-color: #dedede;
+}
+#top .main_color .tabcontainer.promika_maintabs .tab.active_tab {
+    color: #012c60;
+    background-color: white;
+    border-top: 3px solid #012c60;
+    border-top: 3px solid #012c60;
+    padding-top: 9px;
+}
+.main_color div.tab_titles {
+    
+}
+.entry-content-wrapper .flexslider li {
+	margin-left: 0px;
+}
+
+
+/*home*/
+.promika_product_home_wrap {
+	text-align: center;
+}
+.promika_product_select {
+
+}
+.promika_product_select_description {
+	color: #022c60;
+    font-size: 12px;
+    font-weight: 600;
+}
+.template-page .entry-content-wrapper h2.promika_product_select {
+    text-transform: capitalize;
+        margin-bottom: 0px;
+}
+.entry-content-wrapper .post-title.promika_product_select {
+	line-height: 1.3em;
+    font-weight: normal;
+    font-size: 30px;
+    color: #383838;
+}
+
+.dog.promika_aplication_type.spoton {
+	background-image: url(../img/dog_spoton.png);
+}
+.cat.promika_aplication_type.spoton {
+	background-image: url(../img/cat_spoton.png);
+}
+.promika_aplication_type.spray {
+	background-image: url(../img/spray_.png);
+}
+.dog.promika_aplication_type.collar {
+	background-image: url(../img/dog_collar.png);
+}
+.cat.promika_aplication_type.collar {
+	background-image: url(../img/cat_collar.png);
+}
+.promika_aplication_type_home {
+	justify-content: center;
+	    margin-top: 20px;
+	    margin-bottom: 50px;
+}
+.promika_aplication_type_home .promika_aplication_type {
+	width: 100px;
+    height: 100px;
+    margin-right: 22px;
+    position: relative;
+}
+.promika_aplication_type_label {
+    position: absolute;
+    bottom: -38px;
+    width: 100px;
+    left: 0;
+    color: #012c5f;
+    font-size: 16px;
+    font-weight: bold;
+}
+.promika_aplication_type_home .promika_aplication_type:hover {
+	cursor: pointer;
+}
+.home_product {
+	max-width: 900px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.home_product_content {
+	padding: 10px;
+}
+.promika_logo {
+	width: 230px;
+}

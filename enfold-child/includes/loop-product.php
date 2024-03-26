@@ -174,8 +174,9 @@ $promika_compare_to_statement = get_field('promika_compare_to_statement', $post-
 $promika_video = get_field('promika_video', $post->ID);
 $promika_image_gallery = get_field('promika_image_gallery', $post->ID);
 $size = 'full'; // (thumbnail, medium, large, full or custom size)
+$promika_product_variants = get_field('promika_product_variants', $post->ID);
 
-
+        
 
 
         echo "<div class='entry-content-wrapper clearfix {$post_format}-content'>";
@@ -184,13 +185,13 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
             	$close_header 	= "</header>"; 
     
 
-                //var_dump($promika_homepage_image);
+                
                 ?>
 
                 <div class="flex_column av_one_half  flex_column_div av-zero-column-padding first  avia-builder-el-0  el_before_av_one_half  avia-builder-el-first  " style="border-radius:0px; ">
                     <section class="av_textblock_section " itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost">
                         <div class="avia_textblock  " itemprop="text">
-                            <?php if( $promika_homepage_image ) { echo wp_get_attachment_image( $promika_homepage_image, $size ); } ?>
+                            <?php get_template_part( 'includes/product', 'variant' ); ?>
                         </div>
                     </section>
                 </div>
@@ -199,30 +200,20 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
                 <div class="flex_column av_one_half  flex_column_div av-zero-column-padding  avia-builder-el-1  el_before_av_one_half  avia-builder-el-first  " style="border-radius:0px; ">
                     <section class="av_textblock_section " itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost">
                         <div class="avia_textblock  " itemprop="text">
-                            <h1 class="post-title entry-title" itemprop="headline"> 
-                                <?php echo $promika_title; ?>
-                            </h1>
-                            <?php 
-                                if($promika_product_benefits_long)
-                                {
-                                    echo '<ul class="promika_product_benefits_long">';
-
-                                        foreach($promika_product_benefits_long as $promika_product_benefits_long_)
-                                        {
-                                            echo '<li class="promika_product_benefits_long_row">';
-                                                echo  '<span class="promika_product_benefits_long_logo">'.wp_get_attachment_image( $promika_product_benefits_long_['promika_product_benefits_long_logo'], $size ) .'</span>';
-                                                echo  '<span class="promika_product_benefits_long_text">'.$promika_product_benefits_long_['promika_product_benefits_long_text'].'</span>';
-                                            echo '</li>';
-                                        }
-
-                                    echo '</ul>';
-                                }
-
-
-                            ?>
+                            <?php get_template_part( 'includes/product', 'content' ); ?>
                         </div>
                     </section>
                 </div>
+
+
+                <div class="flex_column av_one_full  flex_column_div av-zero-column-padding first  avia-builder-el-4  el_after_av_one_half  avia-builder-el-last  column-top-margin" style="border-radius:0px; ">
+                    <section class="av_textblock_section " itemscope="itemscope" itemtype="https://schema.org/BlogPosting" itemprop="blogPost">
+                        <div class="avia_textblock  " itemprop="text">
+                            <?php get_template_part( 'includes/product', 'tabs' ); ?>
+                        </div>
+                    </section>
+                </div>
+
 
                 <?php
             	$content_output  =  '<div class="entry-content" '.avia_markup_helper(array('context' => 'entry_content','echo'=>false)).'>';

@@ -27,6 +27,8 @@
 
 		<div class='container_wrap container_wrap_first main_color <?php avia_layout_class( 'main' ); ?>'>
 
+			<?php get_template_part( 'includes/product', 'header' );  ?>
+
 			<div class='container template-blog template-single-blog '>
 
 				<main class='content units <?php avia_layout_class( 'content' ); ?> <?php echo avia_blog_class_string(); ?>' <?php avia_markup_helper(array('context' => 'content','post_type'=>'post'));?>>
